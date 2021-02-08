@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <nav class="navbar">
+                <a href="#">
+                    <img class="nav-icon" src="image/hungry-monster.PNG" alt="nav icon">
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="">Home</a></li>
+                    <li class="nav-link"><a href="">About</a></li>
+                    <li class="nav-link"><a href="">Recipes</a></li>
+                    <li class="nav-link"><a href="">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="search-box">
+            <input type="text" name="foodName" id="foodName" placeholder="search">
+            <input type="submit" value="Search" id="searchBtn"/>
+        </div>
+        <div class="search-result" id="searchResult">
+
+        </div>
+    </section>
+    
+    
+    <section class="showed-item" id="showedItem">
+        <button id="cross" onclick=foodItemHide()><i class="fas fa-times-circle"></i></button>
+        <div class="food-details" id="food-details">
+        
+        </div>
+    </section>
+    
+    <script src="assets/app.js"></script>
+</body>
+</html>
